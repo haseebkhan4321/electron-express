@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title Hello World!
+    title= title
     link(rel="stylesheet", href="./styles.css")
   body
     h1 Hello World!
@@ -12,4 +12,8 @@ html
     span(id="chrome-version")
     | , and Electron 
     span(id="electron-version")
+    
+    //- Content block for injecting specific page content
+    block content
+
     script(src="./renderer.js")

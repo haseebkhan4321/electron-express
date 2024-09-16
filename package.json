@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "dev": "nodemon --watch . --exec \"electron .\"",
     "pack": "cd .. && electron-packager ./electron-express --ignore=\"^(?!.(node_modules|dist)).(src|screenshots|tsconfig|README|.git)\" --asar.unpack=\".*\\.(node|dll|db)$\" --overwrite"
   },
   "repository": "https://github.com/electron/electron-quick-start",
