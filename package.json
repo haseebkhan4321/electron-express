@@ -20,7 +20,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "debug": "~4.3.7",
     "ejs": "~2.6.1",
     "electron-packager": "^17.1.2",
     "express": "~4.16.1",
