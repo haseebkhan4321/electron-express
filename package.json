@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "cd .. && electron-packager ./electron-express --ignore=\"^(?!.(node_modules|dist)).(src|screenshots|tsconfig|README|.git)\" --asar.unpack=\".*\\.(node|dll|db)$\" --overwrite"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -16,9 +17,10 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
-    "dependencies": {
+  "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "electron-packager": "^17.1.2",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
